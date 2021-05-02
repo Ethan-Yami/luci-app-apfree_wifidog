@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for ApFree WifiDog
-LUCI_DEPENDS:=+apfree_wifidog
+LUCI_DEPENDS:=+apfree-wifidog
 LUCI_PKGARCH:=all
 
 include ../../luci.mk
