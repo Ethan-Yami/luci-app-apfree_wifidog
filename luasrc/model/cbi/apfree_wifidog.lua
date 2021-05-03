@@ -3,7 +3,7 @@
 
 local sys = require "luci.sys"
 
--- local opkg = require "luci.model.ipkg"
+local opkg = require "luci.model.ipkg"
 
 local packageName = "wifidog"
 local m, s, o
@@ -19,9 +19,9 @@ local function get_status()
 	end
 end
 
--- if opkg.status(packageName)[packageName] then
--- 	return Map(packageName, translate("ApFree_WifiDog"), translate('<b style="color:red">Wifidog is not installed..</b>'))
--- end
+if opkg.status(packageName)[packageName] then
+	return Map(packageName, translate("ApFree_WifiDog"), translate('<b style="color:red">Wifidog is not installed..</b>'))
+end
 
 local descr = [[
 <script async defer src="https://buttons.github.io/buttons.js"></script>
